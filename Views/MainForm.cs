@@ -1,4 +1,5 @@
 using CursosLibres.Views;
+using CursosLibres.Views.Docentes;
 
 namespace CursosLibres
 {
@@ -22,6 +23,11 @@ namespace CursosLibres
         private void MainForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void docentesActualesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new FrmDocentes { MdiParent = this }.Show();
         }
     }
 }
